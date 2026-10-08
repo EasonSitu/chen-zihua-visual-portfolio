@@ -1,0 +1,39 @@
+/* Separate motion study. The approved original C route stays intact. */
+.gallery-scroll{height:620svh}
+.gallery-scene{min-height:0}
+.far-room{transform-origin:76% 48%;inset:-2%;background-image:url('../shared/assets/room-c.png')}
+.living-surface{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.room-wash{display:none}
+.water-light,.ceiling-light{display:none}
+.middle-glass{opacity:.25}
+.near-floor{display:none}
+.room-portal{position:absolute;inset:0;z-index:9;pointer-events:none;clip-path:inset(29% 14% 35% 70%);opacity:0;background:#eceae2;will-change:clip-path}
+.second-room{position:absolute;inset:0;background:url('../shared/assets/room-c-salon.png') center/cover no-repeat;transform-origin:74% 49%;will-change:transform}
+.door-jamb{position:absolute;left:70%;top:29%;width:16%;height:36%;border:12px solid #d2cbbb;box-shadow:inset 14px 0 22px #6b665321,-10px 0 22px #504b3012;z-index:10;pointer-events:none;opacity:0;will-change:transform;box-sizing:border-box}
+.room-caption{position:absolute;left:7%;bottom:9%;z-index:13;opacity:0;pointer-events:none;font-size:10px;letter-spacing:.1em;line-height:2;color:#50574d}
+.room-caption strong{display:block;font-size:26px;letter-spacing:-.02em;font-weight:350}
+.gallery-header,.scene-footer{z-index:30}
+.room-reading{position:absolute;z-index:15;left:43%;right:8%;top:18%;bottom:12%;padding:0;background:none;opacity:0;pointer-events:none;will-change:transform;display:flex;flex-direction:column;justify-content:center;scroll-margin:0}
+.room-reading .reading-intro{margin-bottom:24px;max-width:560px}
+.room-reading .reading-overline{font-size:10px;margin-bottom:14px;letter-spacing:.12em}
+.room-reading .reading-intro h2{font-size:clamp(30px,3.2vw,49px);letter-spacing:-.025em;margin-bottom:12px}
+.room-reading .reading-intro>p:last-child{font-size:12px;line-height:1.65;max-width:440px}
+.room-reading .reading-stories{display:flex;flex-direction:column;gap:0}
+.room-reading .reading-story{position:relative;padding:16px 110px 16px 0;display:block;border-top:1px solid #6d75633b;min-height:100px}
+.room-reading .reading-title{margin:0 0 8px;gap:9px}
+.room-reading .reading-title h3{font-size:19px;letter-spacing:-.02em}
+.room-reading .reading-story>p{font-size:11px;line-height:1.6;margin:0;max-width:420px}
+.room-reading .reading-evidence{position:absolute;right:0;top:20px;width:90px;margin:0}
+.room-reading .reading-evidence strong{font-size:27px}
+.room-reading .reading-evidence span{font-size:8px;line-height:1.4;display:block}
+.room-reading .reading-evidence small{display:none}
+.room-reading .read-story{position:absolute;right:0;bottom:13px;padding:0;font-size:9px;margin:0;border:0}
+.room-reading .reading-footer{margin-top:16px;padding:0;border:0;gap:15px;font-size:8px;flex-wrap:wrap}
+.room-reading .reading-footer p{width:100%;margin:0}
+.demo-comparison{position:fixed;right:22px;bottom:17px;z-index:50;font-size:10px;letter-spacing:.02em;text-decoration:none;background:#eeeae1e6;padding:8px 12px;border:1px solid #948d742b}
+@media(min-width:901px) and (max-height:740px){.room-reading{top:15%;bottom:9%;left:42%;right:7%}.room-reading .reading-intro{margin-bottom:16px}.room-reading .reading-intro h2{font-size:34px}.room-reading .reading-story{padding-top:12px;padding-bottom:12px;min-height:88px}.room-reading .reading-title h3{font-size:17px}.room-reading .reading-story>p{font-size:10px}.room-reading .reading-footer{margin-top:10px}}
+@media(max-width:900px),(pointer:coarse),(prefers-reduced-motion:reduce){.gallery-scroll{height:auto}.gallery-scene{height:auto;overflow:clip}.room-portal,.door-jamb,.room-caption{display:none}.far-room{inset:0}.living-surface{opacity:.7}.room-reading{position:relative;left:auto;right:auto;top:auto;bottom:auto;opacity:1!important;transform:none!important;pointer-events:auto;display:block;margin:36px -7% -30px;padding:70px 7% 40px;background:linear-gradient(#eeece56b,#eeece5c7),url('../shared/assets/room-c-salon.png') 35% center/cover;background-attachment:scroll}.room-reading .reading-intro{margin-bottom:35px}.room-reading .reading-stories{gap:26px}.room-reading .reading-story{padding:22px 0 0;min-height:0}.room-reading .reading-title h3{font-size:23px}.room-reading .reading-story>p{font-size:12px}.room-reading .reading-evidence{position:static;width:auto;margin-top:18px}.room-reading .reading-evidence strong{font-size:33px}.room-reading .reading-evidence span{font-size:11px}.room-reading .reading-evidence small{display:block;font-size:9px}.room-reading .read-story{position:static;font-size:11px;margin-top:18px;padding-bottom:5px}.room-reading .reading-footer{margin-top:38px;font-size:9px}.demo-comparison{right:12px;bottom:10px}}
+.door-jamb{border-bottom:0;border-left-width:20px;background:linear-gradient(90deg,#9c95761a,transparent 4%)}
+@media(min-width:901px) and (pointer:fine) and (prefers-reduced-motion:no-preference){.room-reading .reading-story{min-height:120px;padding-right:132px}.room-reading .reading-evidence{width:110px;top:15px}.room-reading .reading-evidence span{font-size:9px;line-height:1.45}.room-reading .read-story{bottom:11px}.room-reading .reading-title h3{font-size:21px}.room-reading .reading-story>p{font-size:12px}.room-reading .evidence-scope{font-size:9px!important;opacity:.72}.room-reading .reading-intro h2{word-spacing:.07em}}
+@media(min-width:901px) and (pointer:fine) and (prefers-reduced-motion:no-preference){.room-reading .reading-intro>p:last-child,.room-reading .reading-story>p{color:#3e4439}.room-reading .reading-evidence span{color:#525b48}.room-caption{bottom:15%;color:#3d4739}}
+@media(max-width:900px),(pointer:coarse),(prefers-reduced-motion:reduce){.far-room{bottom:auto;height:840px;max-height:100%}}
