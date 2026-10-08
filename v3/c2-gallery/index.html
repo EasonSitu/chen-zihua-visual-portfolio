@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ebeae4">
+  <meta name="description" content="Chen Zihua's selected social media work, presented in a quiet gallery. Xiaohongshu content, creator partnerships and content performance.">
+  <title>Chen Zihua | Quiet Gallery</title>
+  <link rel="preload" href="../shared/assets/room.png" as="image">
+  <link rel="preload" href="../shared/assets/work-xhs.png" as="image">
+  <link rel="stylesheet" href="../shared/core.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../shared/core.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="c2-page" data-selected="xhs">
+  <main class="quiet-gallery" id="work">
+    <div class="room-plate" aria-hidden="true"></div>
+    <div class="room-breath" aria-hidden="true"></div>
+    <canvas class="wall-caustics" aria-hidden="true"></canvas>
+    <canvas class="water-shimmer" aria-hidden="true"></canvas>
+
+    <header class="gallery-header">
+      <a class="wordmark" href="#work" aria-label="Chen Zihua, selected work">
+        <span class="wordmark-name">CHEN ZIHUA</span>
+        <span class="wordmark-discipline" data-en="BRAND &amp; SOCIAL MEDIA" data-zh="品牌與社交媒體">BRAND &amp; SOCIAL MEDIA</span>
+      </a>
+      <nav class="gallery-nav" aria-label="Main navigation">
+        <a href="#work" data-en="Work" data-zh="作品">Work</a>
+        <button type="button" data-action="about" data-en="About" data-zh="關於">About</button>
+        <button type="button" data-action="contact" data-en="Contact" data-zh="聯絡">Contact</button>
+      </nav>
+      <button class="language-button" type="button" data-action="lang" aria-label="Switch between English and Traditional Chinese">EN <span aria-hidden="true">/</span> 繁</button>
+    </header>
+
+    <section class="gallery-intro" aria-labelledby="gallery-heading">
+      <h1 id="gallery-heading" data-en="Selected work." data-zh="精選作品。">Selected work.</h1>
+      <p class="gallery-description">
+        <span data-en="Xiaohongshu-led content" data-zh="以小紅書為核心的內容">Xiaohongshu-led content</span>
+        <span data-en="Creator partnerships &amp; brand storytelling" data-zh="創作者合作與品牌敘事">Creator partnerships &amp; brand storytelling</span>
+      </p>
+      <div class="work-index" role="group" aria-label="Select a work">
+        <button class="index-entry" type="button" data-select-case="xhs" aria-pressed="true" data-testid="primary-interaction">
+          <span class="index-number">01</span><span data-en="Xiaohongshu" data-zh="小紅書">Xiaohongshu</span><span class="selection-rule" aria-hidden="true"></span>
+        </button>
+        <button class="index-entry" type="button" data-select-case="creators" aria-pressed="false">
+          <span class="index-number">02</span><span data-en="Creator Partnerships" data-zh="創作者合作">Creator Partnerships</span><span class="selection-rule" aria-hidden="true"></span>
+        </button>
+        <button class="index-entry" type="button" data-select-case="content" aria-pressed="false">
+          <span class="index-number">03</span><span data-en="Content Performance" data-zh="內容表現">Content Performance</span><span class="selection-rule" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="gallery-space" aria-label="Selected works in the gallery">
+      <div class="exhibit" data-case="xhs" data-slot="front">
+        <div class="ground-shadow" aria-hidden="true"></div>
+        <div class="floor-reflection" aria-hidden="true"><div class="reflection-copy"><img src="../shared/assets/work-xhs.png" alt=""><span></span></div></div>
+        <div class="frame-foot" aria-hidden="true"></div>
+        <button class="work-mount" type="button" data-open-case="xhs" aria-label="Open Xiaohongshu case" aria-pressed="true" data-motion-probe>
+          <div class="work-picture"><img src="../shared/assets/work-xhs.png" alt="Editorial pastry photography with a muted red composition, a visual study" fetchpriority="high" draggable="false"></div>
+          <span class="work-caption"><span class="caption-number">01</span><span class="caption-title" data-en="Xiaohongshu" data-zh="小紅書">Xiaohongshu</span><span class="caption-arrow" aria-hidden="true">→</span></span>
+        </button>
+      </div>
+
+      <div class="exhibit" data-case="creators" data-slot="near">
+        <div class="ground-shadow" aria-hidden="true"></div>
+        <div class="floor-reflection" aria-hidden="true"><div class="reflection-copy"><img src="../shared/assets/work-creators.png" alt=""><span></span></div></div>
+        <div class="frame-foot" aria-hidden="true"></div>
+        <button class="work-mount" type="button" aria-label="Select Creator Partnerships" aria-pressed="false">
+          <div class="work-picture"><img src="../shared/assets/work-creators.png" alt="Tactile paper and editorial contact-sheet composition, a visual study" draggable="false"></div>
+          <span class="work-caption"><span class="caption-number">02</span><span class="caption-title" data-en="Creator Partnerships" data-zh="創作者合作">Creator Partnerships</span><span class="caption-arrow" aria-hidden="true">→</span></span>
+        </button>
+      </div>
+
+      <div class="exhibit" data-case="content" data-slot="far">
+        <div class="ground-shadow" aria-hidden="true"></div>
+        <div class="floor-reflection" aria-hidden="true"><div class="reflection-copy"><img src="../shared/assets/work-content.png" alt=""><span></span></div></div>
+        <div class="frame-foot" aria-hidden="true"></div>
+        <button class="work-mount" type="button" aria-label="Select Content Performance" aria-pressed="false">
+          <div class="work-picture"><img src="../shared/assets/work-content.png" alt="Restrained sunlit still-life content composition, a visual study" draggable="false"></div>
+          <span class="work-caption"><span class="caption-number">03</span><span class="caption-title" data-en="Content Performance" data-zh="內容表現">Content Performance</span><span class="caption-arrow" aria-hidden="true">→</span></span>
+        </button>
+      </div>
+    </section>
+
+    <footer class="gallery-footer">
+      <div class="footer-context">
+        <span class="platforms">Instagram · Facebook</span>
+        <span class="study-note" data-en="Artwork shown as visual studies." data-zh="展示圖像為視覺研究。">Artwork shown as visual studies.</span>
+        <a class="all-demos" href="../" data-en="All demos ↗" data-zh="所有示範 ↗">All demos ↗</a>
+      </div>
+      <div class="atmosphere-controls">
+        <button class="motion-button" type="button" data-action="motion" aria-pressed="true"><span data-control-label data-en="Motion on" data-zh="動效開啟">Motion on</span></button>
+        <button class="sound-button" type="button" data-action="sound" aria-pressed="false"><span data-control-label data-en="Sound off" data-zh="聲音關閉">Sound off</span><span class="sound-line" aria-hidden="true"></span></button>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
